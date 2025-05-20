@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - NOTNETWEB</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand compact-navbar fixed-top">
+            <div class="container">
+                <div class="justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Index">
+                                <img src="~/images/HomeIcon.png" alt="Logo" class="navbar-toggler-icon" />
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Privacy">
+                                <img src="~/images/AboutIcon.png" alt="Logo" class="navbar-toggler-icon" />
+                                About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Privacy">
+                                <img src="~/images/PortfolioIcon.png" alt="Logo" class="navbar-toggler-icon" />
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Privacy">
+                                <img src="~/images/ContactIcon.png" alt="Logo" class="navbar-toggler-icon" />
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="pb-3">
+        <div class="container">
+            @RenderBody()
+        </div>
+    </main>
+
+    <footer class="footer text-muted">
+        <div class="container-fluid py-3">
+            <div class="row justify-content-center text-center">
+                <div class="col-12 mb-2">
+                    <!-- Social Media Icons -->
+                    <a href="#" class="text-decoration-none text-light me-3">
+                        <img src="~/images/InstagramIcon.png" alt="Instagram" class="img-fluid rounded-circle" style="max-height: 30px;" />
+                    </a>
+                    <a href="#" class="text-decoration-none text-light me-3">
+                        <img src="~/images/YouTubeIcon.png" alt="YouTube" class="img-fluid rounded-circle" style="max-height: 30px;" />
+                    </a>
+                    <a href="#" class="text-decoration-none text-light me-3">
+                        <img src="~/images/WhatsAppIcon.png" alt="WhatsApp" class="img-fluid rounded-circle" style="max-height: 30px;" />
+                    </a>
+                    <a href="#" class="text-decoration-none text-light me-3">
+                        <img src="~/images/GmailIcon.png" alt="Gmail" class="img-fluid rounded-circle" style="max-height: 30px;" />
+                    </a>
+                    <a href="#" class="text-decoration-none text-light me-3">
+                        <img src="~/images/githubIcon.png" alt="Github" class="img-fluid rounded-circle" style="max-height: 30px;" />
+                    </a>
+                </div>
+                @*                 <div class="col-12">
+                <!-- Copyright Text -->
+                &copy; 2025 - NOTNETWEB - <a asp-area="" asp-page="/Privacy" class="text-decoration-none">Privacy</a>
+                </div> *@
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
