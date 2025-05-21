@@ -1,11 +1,6 @@
 ﻿@* @{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
  *@
 
 
@@ -13,21 +8,17 @@
 <div class="main-section-grid">
     <div class="column column-steam">
         <div class="card steam-card" style="background-color:#002B5B;">
-            <div class="d-flex align-items-center">
-                <img style="width:100px;" class="img-fluid mb-3 me-3" src="~/images/NotNetLogo.png" alt="Logo" />
-                <div class="row d-flex align-items-center">
-                    <h4 class="card-title text-light">Sample Videos</h4>
-                    <h6 class="card-title text-light"><span style="color:red;">YouTube</span> Channel</h6>
-                </div>
+            <div>
+                <img class="img-fluid mb-2" src="~/images/AboutPic.png" />
+                <h5 class="card-title">KIANOUSH SEDDIGHPOUR</h5>
             </div>
-            <ul class="list-group text-light ms-3">
-                <li class="text-light">IELTS</li>
-                <li class="text-light">General English</li>
-                <li class="text-light">Programming</li>
-            </ul>
-            <a href="https://www.youtube.com/channel/UCNru6zEcL7K4Vv1GUECSwog" class="btn mt-3" target="_blank">
-                <img class="img-fluid" style="width:60px" src="~/images/YTArrow-removebg-preview.png" alt="Arrow" />
-            </a>
+            <h1>About Me</h1>
+            <h3 class="mb-2 text-light"> English Teacher & Lifelong Learner.</h3>
+            <p class="fw-bold">Hi, I’m Kianoush! Originally from Iran, I’ve been teaching English for the past few years,
+                helping learners grow their confidence and fluency.</p>
+            <div class="mt-auto">
+                <a href="#" target="_blank" class="CustomeBtn w-75">Book Now</a> <!-- Full-width button -->
+            </div>
         </div>
     </div>
 
@@ -39,7 +30,7 @@
                     <h1 class="fw-bolder mb-0" style="text-decoration:solid; color:red;">AVAILABLE</h1>
                 </div>
                 <div class="mt-auto">
-                    <a href="#" target="_blank" class="btn btn-primary w-100" style="background-color: #0091C9;">Book Now</a> <!-- Full-width button -->
+                    <a href="#" target="_blank" class="CustomeBtn w-75">Book Now</a> <!-- Full-width button -->
                 </div>
             </div>
         </div>
@@ -49,34 +40,53 @@
                     <h1 class="fw-bolder mb-0" style="text-decoration:solid; color:red;">Contact</h1>
                 </div>
                 <div class="mt-auto">
-                    <a href="#" target="_blank" class="btn btn-primary w-100" style="background-color: #0091C9;">Send a message</a> <!-- Full-width button -->
+                    <a href="#" target="_blank" class="CustomeBtn w-75">Send a message</a> <!-- Full-width button -->
                 </div>
             </div>
         </div>
     </div>
     <div class="column column-center">
         <div class="card projects-card">
-            <a href="BlogPosts" class="text-decoration-none">
+            <a href="#" class="text-decoration-none">
                 <div class="card shadow-sm h-100" style="background-color: #002B5B;">
                     <div class="card-body text-center d-flex flex-column">
                         <div class="d-flex align-items-center justify-content-center flex-grow-1">
-                            <h2 class="card-title text-light">My blog</h2>
+                            <h2 class="card-title text-muted">My blog</h2>
                             <img style="width:50px;" class="img-fluid spinning-gear" src="~/images/gearIcon.png" alt="Logo" />
                         </div>
                     </div>
                 </div>
             </a>
-            <a href="Testimonials" class="text-decoration-none">
+            <a href="#" class="text-decoration-none">
                 <div class="card shadow-sm h-100" style="background-color: #002B5B;">
                     <div class="card-body text-center d-flex flex-column">
                         <div class="d-flex align-items-center justify-content-center flex-grow-1">
-                            <h2 class="card-title text-light">Testimonials</h2>
+                            <h2 class="card-title text-muted">Testimonials</h2>
                             <img style="width:50px;" class="img-fluid spinning-gear" src="~/images/gearIcon.png" alt="Logo" />
                         </div>
                     </div>
                 </div>
             </a>
+           
         </div>
-    </div>
+        <a href="https://www.youtube.com/channel/UCNru6zEcL7K4Vv1GUECSwog" class="text-decoration-none" target="_blank">
+            <div class="card shadow-sm h-100" style="background-color: #002B5B;">
+                <div class="d-flex align-items-center">
+                    <!-- Logo -->
+                    <img style="width:100px;" class="img-fluid mb-0 me-3" src="~/images/NotNetLogo.png" alt="Logo" />
 
+                    <!-- Text + Arrow stacked column -->
+                    <div class="d-flex flex-column justify-content-center align-items-start">
+                        <h4 class="card-title text-light text-decoration-none mb-1 fw-bold">ACADEMY'S</h4>
+                        <div class="d-flex align-items-center">
+                            <h6 class="card-title text-light text-decoration-none mb-0 fw-bold">
+                                <span style="color:red;">YouTube</span> Channel
+                            </h6>
+                            <img class="img-fluid ms-2" style="width:38px;" src="~/images/YTArrow.png" alt="Arrow" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
 </div>

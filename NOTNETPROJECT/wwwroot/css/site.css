@@ -146,6 +146,41 @@ main {
     height: 100%;
 }
 
+
+/*
+    Custome Button 
+*/
+
+.CustomeBtn {
+    background-color: #0091C9;
+    padding: 5px 10px;
+    border-radius: 30px;
+    z-index: 1030;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.06);
+    display: flex;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+
+    .CustomeBtn:hover {
+        background-color: #fff;
+        color: #0091C9;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: 1px solid #0091C9;
+        border-color: #0091C9;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
 .profile-card,
 .languages-card,
 .projects-card,
@@ -153,6 +188,11 @@ main {
 .steam-card {
     margin-bottom: 0 !important;
     margin-top: 0 !important;
+}
+
+
+.projects-card a{
+    margin-bottom: 1rem;
 }
 
     .steam-card .card-title {
@@ -326,6 +366,25 @@ main {
     margin-top: -0.5rem;
     margin-bottom: 0.3rem;
 }
+
+
+.spinning-gear {
+    display: inline-block;
+    font-size: 2rem; /* Adjust size */
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
 /* Listening Card */
 .listening-card {
     margin-top: 0;
@@ -390,4 +449,6 @@ main {
         font-size: 12px;
     }
 }
+
+
 
