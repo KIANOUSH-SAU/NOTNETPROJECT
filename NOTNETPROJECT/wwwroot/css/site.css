@@ -36,7 +36,11 @@ main {
 }
 
 .footer {
-    flex-shrink: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    /* Remove sticky/fixed positioning; let flexbox push it down */
+    margin-top: auto;
 }
 
 /* === Compact Glassmorphism Navbar === */
@@ -45,10 +49,8 @@ main {
     padding: 5px 10px;
     border-radius: 30px;
     border: 1px solid #ddd;
-    display: flex;
     align-items: center;
-    position: fixed;
-    top: 30px;
+    top: 15px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1030;
@@ -119,9 +121,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 1.3fr 1.2fr;
     gap: 1rem;
-    padding-top:10px;
+    padding-top: 10px;
     max-width: 1350px;
-    margin: 100px auto;
+    margin: 24px auto 24px auto;
     min-height: 530px;
     align-items: stretch;
 }
@@ -133,7 +135,6 @@ main {
 }
 
 .card {
-    background: #191824;
     border-radius: 16px;
     padding: 2rem 2.5rem;
     box-shadow: 0 2px 14px 0 #10101a40;
@@ -362,30 +363,31 @@ main {
             color: #5ab2ff;
         }
 
-/* Responsive Design */
-@media (max-width: 1100px) {
-    .main-section-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 0.8rem;
-    }
-
-    .column-center {
-        grid-column: span 2;
-        flex-direction: row;
-        gap: 1rem;
-        justify-content: space-between;
-    }
-}
-
-@media (max-width: 800px) {
+/* Make cards stack on small screens and center navbar/footer */
+@media (max-width: 1200px) {
     .main-section-grid {
         grid-template-columns: 1fr;
         gap: 0.6rem;
         padding: 20px 0 0 0;
+        max-width: 99vw;
     }
 
-    .column {
-        flex-direction: column;
-        gap: 0.6rem;
+
+    .footer {
+        margin: 0 auto 0 auto;
+        width: max-content;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 }
+
+/* Even more compact styles for extra small devices */
+@media (max-width: 480px) {
+
+    .footer {
+        width: 98vw;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+}
+
