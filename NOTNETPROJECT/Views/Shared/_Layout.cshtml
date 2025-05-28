@@ -14,25 +14,25 @@
                 <div class="justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/Index">
+                            <a class="nav-link" asp-area="" asp-controller="LandingPage" asp-action="Index">
                                 <img src="~/images/HomeIcon.png" alt="Logo" class="navbar-toggler-icon" />
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/Privacy">
+                            <a class="nav-link" asp-area="" asp-controller="LandingPage" asp-action="About">
                                 <img src="~/images/AboutIcon.png" alt="Logo" class="navbar-toggler-icon" />
                                 About
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/Privacy">
+                            <a class="nav-link" asp-area="" asp-controller="LandingPage" asp-action="Portfolio">
                                 <img src="~/images/PortfolioIcon.png" alt="Logo" class="navbar-toggler-icon" />
                                 Portfolio
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/Privacy">
+                            <a class="nav-link" asp-area="" asp-controller="LandingPage" asp-action="Contact">
                                 <img src="~/images/ContactIcon.png" alt="Logo" class="navbar-toggler-icon" />
                                 Contact
                             </a>
@@ -74,6 +74,12 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>

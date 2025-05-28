@@ -4,11 +4,11 @@ using System.Diagnostics;
 
 namespace NOTNETPROJECT.Controllers
 {
-    public class HomeController : Controller
+    public class LandingPageController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<LandingPageController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public LandingPageController(ILogger<LandingPageController> logger)
         {
             _logger = logger;
         }
@@ -18,7 +18,15 @@ namespace NOTNETPROJECT.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult About()
+        {
+            return View();
+        }
+        public IActionResult Portfolio()
+        {
+            return View();
+        }
+        public IActionResult Contact()
         {
             return View();
         }
