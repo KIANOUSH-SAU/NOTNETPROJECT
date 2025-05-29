@@ -1,0 +1,37 @@
+﻿<div class="contact-section-grid">
+    <div class="card" style="background-color:#002B5B;">
+        <h2 style="color:red;">Contact Me</h2>
+        <form method="post" asp-action="Contact" class="mt-4">
+            <div class="mb-3">
+                <label for="Name" class="form-label text-light">Your Name</label>
+                <input type="text" class="form-control" id="Name" name="Name" required />
+            </div>
+            <div class="mb-3">
+                <label for="Email" class="form-label text-light">Your Email</label>
+                <input type="email" class="form-control" id="Email" name="Email" required />
+            </div>
+            <div class="mb-3">
+                <label for="Message" class="form-label text-light">Message</label>
+                <textarea class="form-control" id="Message" name="Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="CustomeBtn w-75">Send Message</button>
+        </form>
+        <br />
+        <div class="mt-5">
+
+            @if (ViewBag.Success != null)
+
+            {
+                <div class="alert alert-success">@ViewBag.Success</div>
+            }
+            @if (ViewBag.Error != null)
+
+            {
+                <div class="alert alert-danger">@ViewBag.Error</div>
+            }
+
+
+        </div>
+
+    </div>
+</div>

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using NOTNETPROJECT.Models;
 
 namespace NOTNETPROJECT.Data
 {
@@ -9,5 +10,6 @@ namespace NOTNETPROJECT.Data
             : base(options)
         {
         }
+        public DbSet<PendingContactMessage> PendingContactMessages { get; set; }
     }
 }

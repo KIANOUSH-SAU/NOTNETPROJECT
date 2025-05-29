@@ -153,6 +153,7 @@ main {
 
 .CustomeBtn {
     background-color: #0091C9;
+    border:none;
     padding: 5px 10px;
     border-radius: 30px;
     z-index: 1030;
@@ -467,7 +468,15 @@ main {
 }
 
 
-
+.contact-section-grid {
+    display: grid;
+    gap: 1rem;
+    padding-top: 10px;
+    max-width: 800px;
+    margin: 24px auto 24px auto;
+    min-height: 530px;
+    align-items: stretch;
+}
 
 .swiper-container {
     overflow: hidden; /* Ensure slides don't overflow */
