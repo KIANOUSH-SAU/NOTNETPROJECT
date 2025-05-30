@@ -8,7 +8,7 @@ using NOTNETPROJECT.Data;
 
 #nullable disable
 
-namespace NOTNETPROJECT.Data.Migrations
+namespace NOTNETPROJECT.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot

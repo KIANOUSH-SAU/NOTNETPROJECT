@@ -9,11 +9,11 @@ using NOTNETPROJECT.Data;
 
 #nullable disable
 
-namespace NOTNETPROJECT.Data.Migrations
+namespace NOTNETPROJECT.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250528204718_AddPendingContactMessages")]
-    partial class AddPendingContactMessages
+    [Migration("20250530123446_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
