@@ -21,6 +21,15 @@ namespace NOTNETPROJECT.Controllers
         }
 
         [HttpGet]
+        [Route("/legacyverify")]
+        public IActionResult LegacyVerify(string code)
+        {
+            // Redirect to the HTTPS version
+            return RedirectToAction("Verify", new { code });
+        }
+
+
+        [HttpGet]
         public IActionResult Contact()
         {
             return View();
@@ -46,8 +55,8 @@ namespace NOTNETPROJECT.Controllers
             _db.PendingContactMessages.Add(pending);
             await _db.SaveChangesAsync();
 
-            string verificationUrl = Url.Action("Verify", "Contact", new { code }, Request.Scheme);
-
+            //string verificationUrl = Url.Action("Verify", "Contact", new { code }, Request.Scheme);
+            string verificationUrl = Url.Action("Verify", "Contact", new { code }, "https");
             // Send verification email to user
             await _emailService.SendVerificationEmailAsync(Name, Email, verificationUrl);
 
