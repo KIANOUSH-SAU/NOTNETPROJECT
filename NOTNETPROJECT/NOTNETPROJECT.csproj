@@ -5,6 +5,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-NOTNETPROJECT-5b1cd832-c71d-4aeb-971e-53f0178c1e34</UserSecretsId>
+  <AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
+<AspNetCoreModuleName>AspNetCoreModuleV2</AspNetCoreModuleName>
   </PropertyGroup>
 
   <!--<ItemGroup>
@@ -34,5 +36,4 @@
 		<PackageReference Include="MongoDB.Driver" Version="3.4.0" />
 		<!-- Unrelated, can stay -->
 	</ItemGroup>
-
 </Project>
